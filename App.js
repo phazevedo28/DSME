@@ -7,6 +7,8 @@ import { Button, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import { get } from './api';
+
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -40,6 +42,8 @@ function DetailsScreen({ navigation }) {
 const Stack = createStackNavigator();
 
 function App() {
+  get();
+
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
