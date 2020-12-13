@@ -1,0 +1,12 @@
+{
+  "name": "DSME",
+  "displayName": "DSME",
+  "expo": {
+    "name": "DSME",
+    "slug": "DSME",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
