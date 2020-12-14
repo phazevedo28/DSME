@@ -5,14 +5,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './screens/Home';
 import Details from './screens/Details';
-
-import { get } from './api';
+import SIAFEList from './screens/SIAFEList';
 
 const Stack = createStackNavigator();
 
 function App() {
-  get();
-
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
@@ -21,6 +18,9 @@ function App() {
         </Stack.Screen>
         <Stack.Screen name="Details">
           {props => <Details {...props} />}
+        </Stack.Screen>
+        <Stack.Screen name="SIAFEList">
+          {props => <SIAFEList {...props} />}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

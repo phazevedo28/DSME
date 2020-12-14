@@ -10,6 +10,10 @@ function Home({ navigation }) {
         title="Go to Details"
         onPress={() => navigation.navigate('Details')}
       />
+      <Button
+        title="Go to SIAFEList"
+        onPress={() => navigation.navigate('SIAFEList')}
+      />
     </View>
   );
 }
